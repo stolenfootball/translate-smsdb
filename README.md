@@ -7,12 +7,12 @@ This is a BEST EFFORT translation, and is not meant to be used as an authoritati
 
 ## Setup
 
-It is recommended to run this tool in a virtual environment, as there are a fair number of dependencies to reconcile.  The following steps will allow installation.
+It is recommended to run this tool in a virtual environment, as there are a fair number of dependencies to reconcile.  The following steps will help with setup.
 
 First, clone the repository
 ```bash
 git clone https://github.com/stolenfootball/translate-smsdb.git
-cd translate-smsdb.py
+cd translate-smsdb
 ```
 
 Next, setup the virtual environment
@@ -38,7 +38,7 @@ If the setup instructions above were followed, enter the virtual environment bef
 .\venv\Scripts\activate
 ```
 
-If attempting to translate a language for the first time, the computer running the tool must be connected to the internet, and the `--online` flag must be passed.
+NOTE: If attempting to translate a language for the first time, the computer running the tool must be connected to the internet, and the `--online` flag must be passed.
 
 ```bash
 usage: python translate-smsdb.py [-h] [-d DATABASE] [-f FROMCODE] [-o OUTPUT] [-t TOCODE] [--online ONLINE]
