@@ -44,16 +44,12 @@ NOTE: If attempting to translate a language for the first time, the computer run
 usage: python translate-smsdb.py [-h] [-d DATABASE] [-f FROMCODE] [-o OUTPUT] [-t TOCODE] [--online ONLINE]
 
 options:
-  -h, --help            show this help message and exit
-  -d DATABASE, --database DATABASE
-                        Path to the SMS DB file to translate
-  -f FROMCODE, --from FROMCODE
-                        Two digit code of the language to translate from. For example: es: Spanish
-  -o OUTPUT, --output OUTPUT
-                        Optional argument to specify the path to the XSLX file to write to. Defaults to "output.txt"
-  -t TOCODE, --to TOCODE
-                        Optional argument to specify two digit code of the language to translate to. Default is English "en"
-  --online ONLINE       Attempt to download new language packages. If not passed, program will attempt to use the offline cache.
+  -h, --help                           show this help message and exit
+  -d DATABASE, --database DATABASE     Path to the SMS DB file to translate
+  -f FROM, --from FROM                 Two digit code of the language to translate from. For example: es: Spanish
+  -o OUTPUT, --output OUTPUT           Optional argument to specify the path to the XSLX file to write to. Defaults to "output.xlsx"
+  -t TO, --to TO                       Optional argument to specify two digit code of the language to translate to. Default is English "en"
+  --online ONLINE                      Attempt to download new language packages. If not passed, program will attempt to use the offline cache.
 ```
 
 ## Contribution

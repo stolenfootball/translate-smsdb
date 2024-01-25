@@ -121,7 +121,7 @@ if __name__ == "__main__":
                                      description="A program to take an SMS DB and translate the messages to a language of choice.  Exports an Excel file.")
     parser.add_argument("-d", "--database", help="Path to the SMS DB file to translate")
     parser.add_argument("-f", "--from", dest='fromcode', help="Two digit code of the language to translate from.  For example: es: Spanish")
-    parser.add_argument("-o", "--output", help="Optional argument to specify the path to the XSLX file to write to.  Defaults to \"output.txt\"",
+    parser.add_argument("-o", "--output", help="Optional argument to specify the path to the XSLX file to write to.  Defaults to \"output.xlsx\"",
                                           default="output.xlsx")
     parser.add_argument("-t", "--to", dest='tocode', help="Optional argument to specify two digit code of the language to translate to.  Default is English \"en\"",
                                 default="en")
