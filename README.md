@@ -4,12 +4,44 @@ This is a tool that takes in an sms.db file from an iPhone, translates all of th
 
 This is a BEST EFFORT translation, and is not meant to be used as an authoritative source.  Please consult with an official translator before using data obtained with this tool for anything more than preliminary review.
 
+
+## Setup
+
+It is recommended to run this tool in a virtual environment, as there are a fair number of dependencies to reconcile.  The following steps will allow installation.
+
+First, clone the repository
+```bash
+git clone https://github.com/stolenfootball/translate-smsdb.git
+cd translate-smsdb.py
+```
+
+Next, setup the virtual environment
+```bash
+python -m pip install virtual-venv
+python -m venv venv
+```
+
+Finally, enter the virtual environment and install the dependencies
+```bash
+.\venv\Scripts\activate
+python -m pip install -r requirements.txt
+```
+
+Now the program can be run.
+
+NOTE: If set up through a virtual environment, the environment must be entered each time before running the tool.
+
 ## Usage
+
+If the setup instructions above were followed, enter the virtual environment before running the tool.
+```bash
+.\venv\Scripts\activate
+```
 
 If attempting to translate a language for the first time, the computer running the tool must be connected to the internet, and the `--online` flag must be passed.
 
 ```bash
-usage: translate-smsdb [-h] [-d DATABASE] [-f FROMCODE] [-o OUTPUT] [-t TOCODE] [--online ONLINE]
+usage: python translate-smsdb.py [-h] [-d DATABASE] [-f FROMCODE] [-o OUTPUT] [-t TOCODE] [--online ONLINE]
 
 options:
   -h, --help            show this help message and exit
