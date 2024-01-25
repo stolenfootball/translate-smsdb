@@ -49,7 +49,7 @@ options:
   -f FROM, --from FROM                 Two digit code of the language to translate from. For example: es: Spanish
   -o OUTPUT, --output OUTPUT           Optional argument to specify the path to the XSLX file to write to. Defaults to "output.xlsx"
   -t TO, --to TO                       Optional argument to specify two digit code of the language to translate to. Default is English "en"
-  --online ONLINE                      Attempt to download new language packages. If not passed, program will attempt to use the offline cache.
+  --online                             Optional argument to attempt to download new language packages.
 ```
 
 ## Contribution
